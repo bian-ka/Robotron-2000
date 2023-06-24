@@ -17,11 +17,12 @@ body {
     font-weight: 300;
 }
 
-body, input {
+body, input, button {
     font-family: 'Teko', sans-serif;
 }
 
 main {
+    position: relative;
     width: 80vw;
     height: 80vh;
     margin: 10vh 8vw 10vh 12vw;
@@ -209,6 +210,28 @@ main {
     margin: 10px 0 0;
 }
 
+.botao-alterar {
+    margin: 5px;
+    width: 150px;
+    padding: 10px 0;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.botoes {
+   position: absolute;
+   right: 0;
+   left: 0;
+   top: -10%;
+   z-index: 5;
+   display: flex;
+   justify-content: center;
+}
+
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
@@ -219,6 +242,7 @@ main {
         margin: 5vh auto;
     }
 }
+
 
 @media screen and (max-width: 1200px) {
     body { 
@@ -231,3 +255,4 @@ main {
         margin: 10vh auto;
     }
 }
+
